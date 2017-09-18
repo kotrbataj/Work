@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navrh faktury</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="invoice-title">
+                <h2>Faktura</h2><h3 class="pull-right">Doklad číslo # 12345</h3>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-6">
+                    <address>
+                        <strong>Dodavatel:</strong><br>
+                        Chleba Chlebovič<br>
+                        1234 Chleba<br>
+                        Chleba 4B<br>
+                        Chleba, 332 07
+                    </address>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <address>
+                        <strong>Odběratel:</strong><br>
+                        Rohlík Rohlíkovič<br>
+                        Rohlík, 32<br>
+                        Rohlík 4B<br>
+                        Rohlík, 303 01
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <address>
+                        <strong>Způsob úhrady:</strong><br>
+                        Visa  **** 4242<br>
+                        rohlik@email.com
+                    </address>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <address>
+                        <strong>Datum:</strong><br>
+                        18.9. 2017<br><br>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Přehled objednávky</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-condensed">
+                            <thead>
+                            <tr>
+                                <td><strong>Item</strong></td>
+                                <td class="text-center"><strong>Cena</strong></td>
+                                <td class="text-center"><strong>Množství</strong></td>
+                                <td class="text-right"><strong>Celkem</strong></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                            <tr>
+                                <td>BS-200</td>
+                                <td class="text-center">$10.99</td>
+                                <td class="text-center">1</td>
+                                <td class="text-right">$10.99</td>
+                            </tr>
+                            <tr>
+                                <td>BS-400</td>
+                                <td class="text-center">$20.00</td>
+                                <td class="text-center">3</td>
+                                <td class="text-right">$60.00</td>
+                            </tr>
+                            <tr>
+                                <td>BS-1000</td>
+                                <td class="text-center">$600.00</td>
+                                <td class="text-center">1</td>
+                                <td class="text-right">$600.00</td>
+                            </tr>
+                            <tr>
+                                <td class="thick-line"></td>
+                                <td class="thick-line"></td>
+                                <td class="thick-line text-center"><strong>Mezisoučet</strong></td>
+                                <td class="thick-line text-right">$670.99</td>
+                            </tr>
+
+                            <tr>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line text-center"><strong>Celkem</strong></td>
+                                <td class="no-line text-right">$685.99</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
